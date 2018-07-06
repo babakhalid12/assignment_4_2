@@ -6,7 +6,7 @@ import { StudentListService } from '../student-list.service';
   templateUrl: './jsonreading.component.html',
   styleUrls: ['./jsonreading.component.css']
 })
-export class JsonreadingComponent implements OnInit {
+export class JsonreadingComponent{
 
   public batches = [];
 
@@ -16,7 +16,7 @@ export class JsonreadingComponent implements OnInit {
   }
 
   // Call the service method once
-  ngOnInit() 
+  fun() 
   {
     this._StudentListService.GetBatchDetails()
     .subscribe(data=>this.batches=data);
