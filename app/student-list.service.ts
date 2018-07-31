@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class StudentListService {
 
   
-  // Add dependency in service constructor for httpclient 
+  
   constructor(private http:HttpClient) 
  {
 
@@ -16,8 +16,8 @@ export class StudentListService {
 
   private _url:string = "/assets/Data/Student.json";
 
- // Write method in service class which returns array 
- // of batch details
+ 
+ 
  
 GetBatchDetails():Observable<IStudent[]>
 {
